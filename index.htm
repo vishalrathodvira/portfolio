@@ -4,7 +4,7 @@
 
 <head>
 
-    <script async="" src="/gtag/js?id=UA-166000335-1"></script>
+    <script async="" src="../../gtag/js?id=UA-166000335-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -20,19 +20,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js" integrity="sha512-lzIDzaYCox5oeC0ymj6ho5fRdMrCYkhHfVEm3fySZStdwG85y9SxTcIFYYEUiW1KYbkfiInVFkGofRlYlkHgLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="../../ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="../../ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../../ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="../../ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <style>
-        i:hover{
+.zoomIn:hover{
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+
+        .shado{
+            color: #FFFFFF;
+
+text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        }
+        #ig:hover {
+            -webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+           
+        }
+
+        i:hover {
             color: red;
             width: 50px;
             border: 2px solid blue;
-          
+
         }
+
         .download-btn {
             position: fixed;
             bottom: 40px;
@@ -75,7 +92,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Vishal<span>Rathod</span></a></div>
+            <div class="logo txt"><a href="#">Vishal<span>Rathod</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -83,6 +100,7 @@
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#teams" class="menu-btn">Teams</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#project" class="menu-btn">Project</a></li>
 
 
             </ul>
@@ -95,8 +113,9 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, My Name is</div>
-                <div class="text-2">Vishal Rathod</div>
+                <div class="text-1 txt">Hello, My Name is</div>
+                <div class="text-2 shado" >
+                    Vishal Rathod</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="#">Hire me</a>
                 <a href="#">About Me</a>
@@ -110,7 +129,7 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/potf.jfif" alt="">
+                    <img class="zoomIn" src="images/potf.jfif" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Vishal and I'm a <span class="typing-2"></span></div>
@@ -118,21 +137,35 @@
                         palm reader in India once told me I will live the life of a magical gypsy and it's important for
                         the world that I tell the stories of the many people I encounter on my journeys. That's what I
                         an doing. </p>
-                        <div style="font-size: 20px;">
-                            <h4 style="color: cornflowerblue;">2021-2022</h4>
-                    <b><p>Experiences <span>FULL STACK DEVELOPER<br> At Unique system skill Ind Pvt Ltd</span></p></b>
+                    <div style="font-size: 20px;">
+                        <h4 style="color: rgb(140, 179, 252);">2021-2022</h4>
+                        <b>
+                            <p>Experiences <span>FULL STACK DEVELOPER<br> At Unique system skill Ind Pvt Ltd</span></p>
+                        </b>
 
-                    <b><p style="color: red;">Name: <span style="color:blue;">Vishal Ashok Rathod</span></p></b>
-                    
-                    <b><p style="color: red;">Date of Birth: <span style="color:blue;">13 July 1998</span></p></b></b>
+                        <b>
+                            <p style="color: orangered;">Name: <span style="color:rgb(140, 179, 252);">Vishal Ashok Rathod</span></p>
+                        </b>
 
-                    <b><p style="color: red;">Email Id: <span style="color:blue;">vishalrathod0002@gmail.com</span></p> </b>
-                   
-                   
-                    <b><p style="color: red;">Education: <span style="color:blue;">M.sc (Master Of Sciences)</span></p></b>
-                    
-                    <b><p style="color: red;">Contact No: <span style="color:blue;">7756960324</span></p></b>
-                </div>
+                        <b>
+                            <p style="color: orangered;">Date of Birth: <span style="color:rgb(140, 179, 252);">13 July 1998</span></p>
+                        </b></b>
+
+                        <b>
+                            <p style="color: orangered;">Email Id: <span style="color:rgb(140, 179, 252);">vishalrathod0002@gmail.com</span>
+                            </p>
+                        </b>
+
+
+                        <b>
+                            <p style="color: orangered;">Education: <span style="color:rgb(140, 179, 252);">M.sc (Master Of Sciences)</span>
+                            </p>
+                        </b>
+
+                        <b>
+                            <p style="color: orangered;">Contact No: <span style="color:rgb(140, 179, 252);">7756960324</span></p>
+                        </b>
+                    </div>
                     <a href="#">Download CV</a>
                 </div>
             </div>
@@ -177,7 +210,7 @@
 
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My skills</h2>
+            <h2 class="title shado">My skills</h2>
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
@@ -234,13 +267,13 @@
                         </div>
                         <div class="line js"></div>
                     </div>
-                    <div class="bars">
+                    <!-- <div class="bars">
                         <div class="info">
                             <span>Angular Js</span>
                             <span>50%</span>
                         </div>
                         <div class="line php"></div>
-                    </div>
+                    </div> -->
                     <div class="bars">
                         <div class="info">
                             <span>PHP</span>
@@ -261,21 +294,21 @@
                             <span>70%</span>
                         </div>
                     </div>
-                    <div class="line mysql"></div>
+                    <!-- <div class="line mysql"></div>
                     <div class="bars">
                         <div class="info">
                             <span>SQL</span>
                             <span>70%</span>
                         </div>
                     </div>
-                    <div class="line mysql"></div>
-                    <div class="bars">
+                    <div class="line mysql"></div> -->
+                    <!-- <div class="bars">
                         <div class="info">
                             <span>Mongodb</span>
                             <span>50%</span>
                         </div>
                         <div class="line php"></div>
-                    </div>
+                    </div> -->
                     <div class="bars">
                         <div class="info">
                             <span>Wordpress</span>
@@ -292,46 +325,87 @@
 
     <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">My teams</h2>
+            <h2 class="title">My Team</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-1.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text">Mr Mayank khadane</div>
+                        <p>Photographer & 3D Animation</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-2.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text">Amar N.Kawalkar</div>
+                        <p>Full Stack Developer</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-3.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text">Shobham Bhole</div>
+                        <p>Vedio Editor & Content Writer</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-4.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text">Abhijeet S. Maheshkar</div>
+                        <p>Web Developer</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="text">Rutuja Hendave</div>
+                        <p>Java Developer</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+<!-- start project section -->  
+<section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Designer</div>
+                        <p>“It is not because things are difficult that we do not dare; it is because we do not dare
+                            that they are difficult.”
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">PhotoGrapher</div>
+                        <p>Do you want to be even more successful? Learn to love learning and growth. The more effort
+                            you put into improving your skills.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p>Do you sometimes have the feeling that you’re running into the same obstacles over and over
+                            again? Many of my conflicts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- end project section --> 
+
+
 
     <section class="contact" id="contact">
         <div class="max-width">
@@ -426,13 +500,17 @@
             </div>
         </center>
 
-
+        <script>
+            var typed = new Typed(".typing", { strings: ["FullStack Developer", "Python Developer", "Web Developer", "PhotoGrapher", "Designer", "Freelancer", "Youtuber"], typeSpeed: 150, backSpeed: 60, loop: true }); var typed = new Typed(".typing-2", { strings: ["FullStack Developer", "Web Developer", "PhotoGrapher", "Designer", "Freelancer", "Youtuber"], typeSpeed: 70, backSpeed: 60, loop: true });
+        </script>
 
         <span>Created By <a href="https://github.com/vishalrathodvira?tab=repositories">Vishal Rathod</a> | <span
                 class="far fa-copyright"> 2022 All Copyrights Reserved.</span>
     </footer>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script>
-    <script src="index.js"></script>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </body>
 
 </html>
