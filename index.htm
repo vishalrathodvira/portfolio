@@ -551,7 +551,8 @@ method="POST">
         </div>
     </footer>
     <script>
-        var typed = new Typed(".typing", { strings: ["FullStack Developer", "Python Developer", "Web Developer", "PhotoGrapher", "Designer", "Freelancer", "Youtuber"], typeSpeed: 150, backSpeed: 60, loop: true }); var typed = new Typed(".typing-2", { strings: ["FullStack Developer", "Web Developer", "PhotoGrapher", "Designer", "Freelancer", "Youtuber"], typeSpeed: 70, backSpeed: 60, loop: true });
+        $(document).ready(function(){$(window).scroll(function(){if(this.scrollY>20){$('.navbar').addClass("sticky");}else{$('.navbar').removeClass("sticky");}
+if(this.scrollY>500){$('.scroll-up-btn').addClass("show");}else{$('.scroll-up-btn').removeClass("show");}});$('.scroll-up-btn').click(function(){$('html').animate({scrollTop:0});$('html').css("scrollBehavior","auto");});$('.navbar .menu li a').click(function(){$('html').css("scrollBehavior","smooth");});$('.menu-btn').click(function(){$('.navbar .menu').toggleClass("active");$('.menu-btn i').toggleClass("active");});var typed=new Typed(".typing",{strings:["FullStack Developer","Python Developer","Web Developer","PhotoGrapher","Designer","Freelancer","Youtuber"],typeSpeed:100,backSpeed:60,loop:true});var typed=new Typed(".typing-2",{strings:["FullStack Developer","Web Developer","PhotoGrapher","Designer","Freelancer","Youtuber"],typeSpeed:100,backSpeed:60,loop:true});$('.carousel').owlCarousel({margin:20,loop:true,autoplay:true,autoplayTimeout:2000,autoplayHoverPause:true,responsive:{0:{items:1,nav:false},600:{items:2,nav:false},1000:{items:3,nav:false}}});});
     </script>
     <!-- <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
     <script src="index.js"></script>
