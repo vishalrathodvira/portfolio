@@ -98,7 +98,7 @@
     </style>
 </head>
 
-<body style="font-family: Garamond, serif;">
+<body style="font-family: Garamond, serif; id="animation"">
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -559,5 +559,22 @@ if(this.scrollY>500){$('.scroll-up-btn').addClass("show");}else{$('.scroll-up-bt
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script>
+VANTA.GLOBE({
+  el: "#animation",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 600.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x2d9ed9,
+  color2: 0xf5355a,
+
+})
+</script>
 
 </html>
